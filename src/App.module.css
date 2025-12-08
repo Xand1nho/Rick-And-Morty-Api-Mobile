@@ -16,8 +16,8 @@
     align-items: center;
     justify-content: center;
     border: 2px solid #ff0000;
-    gap: 20px;
-    padding: 20px;
+    gap: 50px;
+    padding: 30px;
     margin-top: 2vh;
     border-radius: 40px;
     height: 100%;
@@ -27,28 +27,37 @@
 
 
 .infoBtn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-top: 20px;
-    padding: 10px;
-    font-weight: bold;
-    font-size: 22px;
-    color: #ffffff;
-    background-color: rgb(0, 0, 0);
     border: none;
-    border-radius: 999px;
-    opacity: 0.7;
-    transition: all 200ms ease-in-out;
+    border: 2px solid #ffffff;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0px -3px 20px #000000;
+    font-weight: 600;
+    width: 100%;
+    background-color: rgba(0, 68, 255, 0.426);
+    color: #ffffff;
+    text-shadow: 0px 3px 5px black;
+    font-size: 1.2rem;
+    transition: all 400ms ease-in-out;
+    margin-top: 20px;
 }
 
 .infoBtn:hover{
-    box-shadow: rgba(70, 57, 241, 0.4) 5px 5px, rgba(46, 240, 175, 0.3) 10px 10px, rgba(46, 240, 46, 0.2) 15px 15px, rgba(240, 140, 46, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
-    cursor: pointer;
-    opacity: 1;
+    border: 2px solid #81f901;
+    box-shadow: 0px -3px 20px #43fb00c2;
+    background-color: rgba(0, 255, 72, 0.426);
+    color: #ffffff;
+    text-shadow: 0px 3px 5px black;
+    border-radius: 30px;
 }
 
+
+@keyframes cardBackground{
+  5%{ 
+    opacity: 0;
+    background-color: #e7ff10;
+  }
+}
 
 
 

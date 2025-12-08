@@ -24,6 +24,7 @@ function App() {
   return (
     
     <>
+    
       {modal !== undefined && <InfoModal data={data[modal]} close={() => setModal()}/>}
     <h1 className={s.title}>Rick and Morty Characters</h1>
     <main>
@@ -45,9 +46,10 @@ function App() {
         })}
       </div>
 
-
-
     </main>
+
+
+
     </>
   )
 }

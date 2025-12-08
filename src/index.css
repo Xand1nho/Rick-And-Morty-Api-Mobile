@@ -8,15 +8,36 @@
 }
 
 body{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-image: url('/Wpmobile.jpg');
+  background-image: url('/Mobile.gif');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+}
+
+body::before{
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.750);
+  z-index: -1;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2vw;
+  margin-bottom: 8vh;
+}
+
+a{
+  color: white !important;
+}
+
+input[type="radio"]{
+  margin-right: 5px;
 }
 
 input{
@@ -30,18 +51,25 @@ input{
   border: 2px solid #ff0000;
 }
 
- 
-.data{
-  color: white;
-}
 /* O @media serve para o desktop*/ 
 @media (width >= 768px){
   body{
-    background-image: url('/WpDesktop1920x1200.jpg');
+    background-image: url('/Bggif.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
   }
   input{
     width: 300px;
     font-size: 18px;
+  }
+  body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.541); 
+    z-index: -1; 
   }
   
 }
