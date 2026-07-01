@@ -1,29 +1,26 @@
-
-/* */
-*{
+* {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-  background-image: url('/Mobile.gif');
-  background-position: center;
+body {
+  background-image: url('/rm-bg-animated-mobile.gif');
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
-body::before{
+body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.750);
-  z-index: -1;
+  background: rgba(0, 0, 0, 0.728); 
+  z-index: -1; 
 }
 
-main{
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,44 +29,49 @@ main{
   margin-bottom: 8vh;
 }
 
-a{
+a {
   color: white !important;
 }
 
-input[type="radio"]{
+input[type="radio"] {
   margin-right: 5px;
 }
 
-input{
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  padding: 0;
-  width: 50%;
-  border-radius: 5px;
-  border: none;
-  border: 2px solid #ff0000;
-}
 
-/* O @media serve para o desktop*/ 
-@media (width >= 768px){
-  body{
-    background-image: url('/Bggif.gif');
+@media (width >= 768px) {
+  body {
+    background-image: url('/rm-bg-animated-mobile.gif');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
   }
-  input{
-    width: 300px;
-    font-size: 18px;
+  body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.541); 
+  z-index: -1; 
+}
+
+}
+
+
+
+@media (width > 1000px) {
+  body {
+    background-image: url('/rm-bg-animated.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
   }
-  body::before{
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.541); 
-    z-index: -1; 
-  }
-  
+  body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.419); 
+  z-index: -1; 
+}
+
 }
